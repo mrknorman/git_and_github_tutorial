@@ -13,4 +13,4 @@ This workshops runs through the very first steps in familiarising yourself with 
 ## To attend this workshop, you will need:
 * To have made a GitHub account (https://github.com/join)
 * Attended the BASH workshop, or be familiar with bash/working in the command line
-* If using a Windows laptop, install: 
+* If using a Windows laptop, install: https://gitforwindows.org/

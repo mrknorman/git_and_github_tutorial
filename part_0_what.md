@@ -6,6 +6,8 @@ This preliminary part of the Git and Github tutorial will give a brief introduti
 * [<b>Git</b>](https://git-scm.com) is a free open-source software control system. It is commonly found by default on many computer systems and terminals, and is used widely across both industry and academia. 
 * [<b>Github</b>](https://github.com) is one of a few online services that provide hosting for github repositories (we'll go over what these are later). 
 
+Neither git nor github are exclusively used for software development, and in fact be used to control versions of any type of file you wish. However, for the purposes of this tutorial, and because that is what Git is primarily used for, we will often talk about the more specific case of software development.
+
 <h2> Version Control </h2>
 
 Version control is an extremly usefull tool for those looking to develop software, as was stated, at their most basic they allow their users to save multiple versions of their code at the same time. However, it can be thought of even more simply than that - it dosn't neccisarily need to be code that you are saving. Most version control systems will allow you to keep versions of any type of file - anything in plain text of course, but binary files if the occasion arrives (although they will not neccisarily be to display the contents of those files in their interface).

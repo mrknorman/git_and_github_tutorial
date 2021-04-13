@@ -1,5 +1,5 @@
 # PXT102/202 Git and Github Workshop
-Demonstrators: Michael Anderson and Michael Norman
+Demonstrators: Joe Askey and Michael Norman
 
 This GitHub repository contains all the material for the "Git and Github Workshop".
 

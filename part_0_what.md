@@ -28,7 +28,7 @@ These tutorials for example have been added to a git repository and uploaded to 
 
 How exactly you use git will be dependant on your operating system:
 
-1. If you are using OSX (Mac) or a linux distribution then you will probably already be able to access git via your terminal.
+1. If you are using <b>eOSX (Mac) or a Linux distribution </b>then you will probably already be able to access git via your terminal.
 
 > <b> Activity 0.1a </b> *If you are using OSX (Mac) or a linux distribution then procced with this activity otherwise go to Activity 0.1b.* Open your terminal and type the following command.
 
@@ -36,9 +36,18 @@ How exactly you use git will be dependant on your operating system:
 
 > If your terminal can access git this should display the git help text. If not speak to one of the demonstrators.
 
-2. If you are using Windows (boo) then things are a bit more complicated.
+2. If you are using <b> Windows </b> (boo) then things are a bit more complicated.
 
-> <b> Activity 0.1b </b> *If you are using windows* head to [this link](https://git-scm.com/download/win) and download git for Windows.
+> <b> Activity 0.1b </b> *If you are using windows*:
+> 1. First head to [this link](https://git-scm.com/download/win) and download git for Windows.
+> 2. Run the downloaded installer: <b> Leave all options default </b>.
+> 3. Search for and open the program called: 'Git Bash'. This will open a terminal emulator which will allow you to use git from the command line.
+> 4. Type the following command.
+
+    git
+    
+> If your terminal can access git this should display the git help text. If not speak to one of the demonstrators.
+
 
 <h2> Github </h2>
 

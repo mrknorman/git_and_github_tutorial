@@ -33,3 +33,47 @@ Another large reason to use version control is to allow for easy collaboration b
 * How will you make sure you your version of the code won't diverge massivelty over time.
 
 This tutorial will not be talking about how to collaberate with Git in great detail, rather first focusing on how to use it for indvidual use. However, once you've got the basics paracticed it will be much easier to move into a colabarative working environment.
+
+<h2> Terminal Commands </h2>
+
+This workshop will focus on using Git from the command line as this is the most widely avalible and uniform method to use git. There are GUI alternatives such as [GitHub Desktop](https://desktop.github.com) if you wish to investigate them feel free, they have most of the same functionality and still use Git at their core. However I would reccomend learning to use the terminal if you want to persue a career in coding, and for the purposes of this workshop that is what we will be using.
+
+For those of you who are unfamiliar with using the command line this section will breifly go over some very basic commands just to get you started. These commands are not exclusive or related to Git, but they will help you navigate the interface.
+
+The command line is a method to send commands to a computer via text entry rather than by navigating via a gui. In the end both methods can send commands for the computer to execute, however it is often quicker to execute complex commands via the command line.
+
+> Activity 1.1 Find your current working directory by typing the following command:
+
+		pwd
+
+> All commands you run will execute as if they are being run in your current working directory:
+    
+> Activity 1.2 List the contents of your current working directory by entering:
+
+		ls
+ 
+> This shows the contents of your current working directory.
+
+> Activity 1.3 Make a new folder within your current directory by typing the following command:
+
+		mkdir test_directory
+		
+> this will make a directory called test_directory. If you type ls again you should be able to see this new directory. You can name a new directory whatever you like by changing test_directory to another name. Hint: refrain from using spaces in file and folder names, it gets annoying.
+
+> Activity 1.4 Change your current working directory to the new directory by typing:
+
+		cd test_directory
+		
+> Once you have changed your working directory you should be able to see that it is empty by typing ls. You can see you have moved to the correct directory by typing pwd. To exit the directory again type:
+
+		cd ..
+		
+> This will move you up one level of the directory tree back to your original working directory.
+
+> Activity 1.5 To delete a directory use the following command:
+
+	rm -r test_directory
+	
+> The -r tag ensures that the folder is deleted recursively. Warning this will also delete all the directory contents so be carefull.
+
+Congratulations you can now navigate your computer using the command line. We will use these commands in the next tutorial, so be sure to keep this page open unless you have a good memory.

@@ -18,7 +18,7 @@ There are several advanatages to such a snapshoting system:
 * You can maintain several versions of the code at once, each which you know can do specific things correctly <-- This is probably not the best practice.
 * You can cycle back through past changes to find out when and where a bug was introduced to the code (and who to blame).
 
-There will be many more advantages that I've forgotten to list here but the point is that the benifits are innumerable, and they become even greater the larger and more complex a project you are working on. Any serious software development done by anyone in academia or industry will use some kind of version control system. ß
+There will be many more advantages that I've forgotten to list here but the point is that the benifits are innumerable, and they become even greater the larger and more complex a project you are working on. Any serious software development done by anyone in academia or industry will use some kind of version control system.
 
 <h2> Backup </h2>
 

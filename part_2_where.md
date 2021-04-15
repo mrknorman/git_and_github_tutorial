@@ -4,11 +4,27 @@ This section of the the tutorial will give an overview of the struture of a typi
 
 <h2> Temporal Layout </h2>
 
-A git <b> repository </b> often shortened to repo, is a database where git stores snapshots (commits) of your project. This is a place where git keeps the information about one specidic project. Usually, and optimally, each project will have its own repository (and copies of that repository on github, but we'll get to that.).
+A git <b> repository </b> often shortened to repo, is a database where git stores snapshots (commits) of your project. This is a place where git keeps the information about one specidic project. Usually, and optimally, each project will have its own repository (and a copy of that repository on github, but we'll get to that.).
 
 Your <b> working tree </b> or your <b> working directory </b> contains all the files that a given git repostitory is monitoring. This is where you edit and save the files whilst you are working on them. Git monitors these files and can calculate the difference between the files and the last time you asked it to remember what the files looked like. People often get confused between git repositories and their respective working directories. The repository consists only of a folder called '.git/' within your working directory, everything else within the directory is just saved as ordinary files on your computer.
 
-Git repositories are comprised of a graph of connected snapshots or <b> commits </b>, each of these commits contains information about the changes made to your working files since the last commit. These commits are usually made manually, and we will be going over how to do that in part 3. Each commit will remember who made the commit and timestamp it.
+> Activity 2.1: Create a new directory using the command you learned in part 1, then navigate to it. Once you have navigated to your new directory, type the following command to intilise a git repository:
+
+    git init
+
+> This command creates a git repository hidden file inside your directory called .git. This repository is linked to the directory it is located, and will track changes within that file. You will not be able to see this with the ls commmand unless you add an extra tag. To see hidden files within a directory use the following command.
+
+    ls -a
+    
+> If you use this command inside the directory you should see the .git repository file. If you do not see that contact a demonstrator.
+
+Git repositories are comprised of a graph of connected snapshots or <b> commits </b>, each of these commits contains information about the changes made to your working files since the last commit. These commits are usually made manually, which we will be doing in Activity 2.2. Each commit will remember who made the commit and timestamp it. Currently your newly created git repository will have no commits.
+
+> Activity 2.2: To get a quick summary of the current status of your repository type the following command:
+
+    git status
+    
+> Currently this should show that you have 0 commits and are on the master branch. We will go over branches later.
 
 A chain of linearly connected commits is called a <b> branch </b> typicaly the first and main branch in a repository will be known as the 'master' branch. This is often kept as a clean working copy of your code. Repositories can have multiple branches that divere from each other however. Each branch can contain a different version of the working files, and as long as these changes have been commited the user can swap between different branches.
 

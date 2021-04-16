@@ -1,4 +1,4 @@
-<h1> Git and Github Tutorial - Part 2: When? </h1>
+<h1> Git and Github Tutorial - Part 3: Where? </h1>
 
 We have seen how to create and use a local git repository, but now you are probably wondering where GitHub comes in. Well in this part of the workshop we will go over how to set up a remote repository to backup and protect your projects on GitHub, as well as allowing for easy collaboration between multiple people.
 

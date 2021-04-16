@@ -2,7 +2,7 @@
 
 This section of the the tutorial will give an overview of the struture of a typical github local and remote repository setup, as well as going over how git tracks changes across time.
 
-<h2> Temporal Layout </h2>
+<h2> Basic Git Commands </h2>
 
 A git <b> repository </b> often shortened to repo, is a database where git stores snapshots (commits) of your project. This is a place where git keeps the information about one specidic project. Usually, and optimally, each project will have its own repository (and a copy of that repository on github, but we'll get to that.).
 
@@ -24,7 +24,61 @@ Git repositories are comprised of a graph of connected snapshots or <b> commits 
 
     git status
     
-> Currently this should show that you have 0 commits and are on the master branch. We will go over branches later.
+> Currently this should show that you have 0 commits and are on the master branch. We will go over branches later. 
+ 
+In order to make your first commit to the repository we will first need to add a new file to the directory. You may add a file to the directory however you wish too, any plaintext file will do. 
+
+> Activity 2.2: *If you want to add a new file using the command line* you can use the following command:
+
+    touch new_file.txt
+    
+> This will create a new file named 'new_file.txt'.
+
+Once we have created a new file we can now create our first commit to the local repository. If we use the git status command you will see that the new file we have just added is now listed as untracked. This means that git has seen the new file, but we have never added it to the repository before, so any changes we make to this file will be untracked. Before we can commit to the repository we must first tell git which files we want to be included in the commit. To do this we must add the files to the <b> index </b>.
+
+> Activity 2.3: To add an item to the index so that it is 'staged for commit' we can use the following command:
+
+    git add new_file.txt
+    
+> Once we have ran that command, we can then see that git status shows us that the file is staged for commit. So we are finally ready to make our first commit.
+
+> Activity 2.4: To commit staged changes to the repository, we can use the following command:
+
+    git commit -m 'Commiting test file'
+    
+> You will notice that git forces us to use the -m tag and add a message with the commit. This is important for future reference so try to make these descriptive. If you did not use the -m tag then git will open a command line text editor (probably vim) and get to write a commmit. Do not panic - to exit vim type :q. Running the git status command should show that we now have one commit.
+
+As well as tracking new files added to the directory git also tracks changes within files. Make an edit to the file using your prefered method. 
+
+> Activity 2.5: *If you want to quickly change to the contents of the existing file* you can use the following command:
+
+    echo 'This is example text.' > new_file.txt
+    
+> To quickly view the contents of the file use the following command:
+
+    cat new_file.txt
+    
+If you run git status once you have made a change to you file you should see that it shows that the file has been modified. Add this change to the commit. Hint: you can add all tracked files to a commit at once using the -u tag:
+
+    git add -u
+    
+Commit this change to the directory, remember to add a usefull message using the -m tag. 
+
+> Activity 2.5: You can see all the past commits using the following command:
+
+    git log
+    
+> Try this now, you should see the two commits you have made. The large string of numbers and letters you see after the commit are called the git hash, this is the unique identified for that commit.
+
+Now that git is tracking changes you make to your code, if you make a mistake in your code and want to revert the changes of a particular commit, it is possible to do this. There are a few ways to go about this, but the most simple and the safest method is to use git revert. First you must commit any current file modifications to your repository. Then find the git hash you wish to revert using the git log command. Hint: This is the hash of the git you wish to revert, not the hash of a commit you wish to revert to.
+
+>  Activity 2.6: Try reverting the last commmit you made. Find the git hash of your last commit and revert it using this command:
+
+    git revert insert_hash_here
+ 
+> Unfortunately this will probably open vim or whatever text editior your git is set up to use as default. Again to exit vim either hold shift and press "ZZ", or type ":q".
+
+<h2> Git Branching </h2>
 
 A chain of linearly connected commits is called a <b> branch </b> typicaly the first and main branch in a repository will be known as the 'master' branch. This is often kept as a clean working copy of your code. Repositories can have multiple branches that divere from each other however. Each branch can contain a different version of the working files, and as long as these changes have been commited the user can swap between different branches.
 

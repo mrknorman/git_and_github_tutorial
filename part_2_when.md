@@ -77,3 +77,9 @@ Now that git is tracking changes you make to your code, if you make a mistake in
     git revert insert_hash_here
  
 > Unfortunately this will probably open vim or whatever text editior your git is set up to use as default. Again to exit vim either hold shift and press "ZZ", or type ":q".
+
+>  Activity 2.7: Finally, for completion, should you want to delete a local git directory use the following command:
+
+    rm -rf .git
+ 
+> This will remove the loacl git repository and all its information. So make sure you really want to do this before running this command. The -r tag is needed to recursively remove files inside a directory, and the -f take forcably removes git protected files which would otherwise prompt you before every file is deleted.

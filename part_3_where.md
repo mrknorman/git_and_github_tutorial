@@ -29,7 +29,7 @@ There are two ways to connect a local repository to a remote repository dependin
 
     git push -u origin master
 
-Next we will want to learn how we can update the remote with changes made to the remote, and vice versa. This is accomplished using two commands git push and git pull. Git status is again usefull here, as it can tell us how many commits the local is either ahead or behind the remote.
+Next we will want to learn how we can update the remote with changes made to the local, and vice versa. This is accomplished using two commands git push and git pull. Git status is again usefull here, as it can tell us how many commits the local is either ahead or behind the remote.
 
 > Activity 3.3: To get any changes from the remote to your local, use the following command:
 

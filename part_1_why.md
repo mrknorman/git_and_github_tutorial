@@ -24,7 +24,7 @@ There will be many more advantages that I've forgotten to list here but the poin
 
 More simple to see than the benifits of version control are the benifits of having a version of your code backed up on a remote server, Things can, and often do, happen to make you lose or damage your code stored on a local machine. Using remote repository services like Github that you always have a copy of your code avalible even if your local copy is corrupted. (Although it would also be prudent to keep your own backups as well as no backup option is 100% and the more backups the better).
 
-<h2> Collaberation </h2>
+<h2> Collaboration </h2>
 
 Another large reason to use version control is to allow for easy collaboration between multiple developers. When you are the only person working on a codebase this is not such a problem - however as soon as you start working on a project with at least one other person you will start to see issues arise.
 
